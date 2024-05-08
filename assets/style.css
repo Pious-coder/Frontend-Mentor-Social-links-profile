@@ -1,0 +1,90 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Off-Black);
+  font-family: "Inter", sans-serif;
+}
+
+.conatainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-Grey);
+  width: 400px;
+  margin: 100px auto;
+  border-radius: 15px;
+}
+
+.conatainer img {
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: var(--White);
+  margin-top: 20px;
+}
+
+span {
+  color: var(--Green);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+p {
+  color: var(--White);
+  margin-top: 30px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 85%;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--Grey);
+  color: var(--White);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+button:hover {
+  background-color: var(--Green);
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .conatainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
